@@ -1,0 +1,27 @@
+<div class="wrapper wrapper_padding clearfix">
+	<div class="col-1 about homepage_content">
+		<h2>About</h2>
+		<hr>
+		<p>I'm a web developer living in San Diego, CA</p>
+		<p>I love nothing more than spending a rainy saturday learning and implementing a new technology in creative &amp; novel ways (the MEAN stack is my newest conquest)</p>
+		<p>When I'm not at my computer, you can find me at the dog park, hitting the gym, or dreaming of a empty powdery mountains</p>
+	</div>
+	<div class="col-2 homepage_content">
+		<h2>Code</h2>
+		<hr>
+		<% @posts.each do |post| %>
+			<h3><%= link_to post.title , post %></h3>
+			<p class="date"><%=post.created_at.strftime("%A, %b, %d")%></p>
+		<% end %>
+	</div>
+	<div class="col-3 homepage_content">
+		<h2>Interests</h2>
+		<hr>
+		<h3><a href="#">Placeholder 1<a></h3>
+		<p class="date">Sunday February 5th</p>
+		<h3><a href="#">Placeholder 2<a></h3>
+		<p class="date">Sunday February 5th</p>
+		<h3><a href="#">Placeholder 3<a></h3>
+		<p class="date">Sunday February 5th</p>
+	</div>
+</div>
