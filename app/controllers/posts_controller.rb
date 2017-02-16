@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 	before_action :find_post, only: [:show, :edit, :update, :destroy]
 
 	def index
-
+		@posts = Post.all.order("created_at desc").limit(3)
 	end
 
 	def new
@@ -26,6 +26,7 @@ class PostsController < ApplicationController
 	end
 
 	def update
+		@post.slug = nil
 		if @post.update(post_params)
 			redirect_to @post, notice: "Post successfully updated"
 		else
