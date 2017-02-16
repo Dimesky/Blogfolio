@@ -139,6 +139,18 @@ input[type="submit"] {
 	}
 }
 
+.project_button {
+	background: $highlight;
+	color: $white;
+	text-decoration: none;
+	padding: 1em 2em;
+}
+
+.button_wrapper {
+	margin-top: 4em;
+	text-align: center;
+}
+
 #page_title {
 	text-align: center;
 	border-bottom: 1px solid $border;
