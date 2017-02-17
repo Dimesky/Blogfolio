@@ -12,11 +12,12 @@
 		</div>
 	</div>
 
-	<div class="button_wrapper">
-	<a class="project_button" <%= link_to "Edit", edit_project_path(@project) %><a/>
-	<a class="project_button"<%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: 'Are you sure?' } %></a>
-	</div>
-	<hr>
+	<% if user_signed_in? %>
+		<div id="admin_links">
+			<%= link_to "Edit", edit_project_path(@project) %>
+			<%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: 'Are you sure?' } %>
+		</div>
+	<% end %>
 
 	
 
