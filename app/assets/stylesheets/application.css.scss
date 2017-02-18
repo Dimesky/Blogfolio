@@ -176,6 +176,9 @@ input[type="submit"] {
 		float: left;
 		font-size: .9em;
 		margin: 0;
+		a:link {
+			text-decoration: none;
+		}
 	}
 	nav {
 		float: right;
