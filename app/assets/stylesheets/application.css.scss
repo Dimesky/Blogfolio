@@ -49,6 +49,11 @@ body {
 	border-bottom: 1px solid #E9E9E9;
 }
 
+.btcqr {
+  margin-left: 20px;
+  margin-top: 1px;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, li {
 	color: $dark;
 }
@@ -172,6 +177,9 @@ input[type="submit"] {
 #main_footer {
 	padding: 2.5em 5%;
 	border-top: 1px solid $border;
+	.btcqr {
+		margin-left: 50%;
+	}
 	.copyright {
 		float: left;
 		font-size: .9em;
